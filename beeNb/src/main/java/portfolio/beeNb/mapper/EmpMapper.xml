@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="portfolio.beeNb.mapper.EmpMapper">
+	<select id="empLogin" resultType="portfolio.beeNb.vo.EmpVO">
+		SELECT emp_no empNo, emp_pw empPw FROM emp WHERE emp_no = #{empNo} AND emp_pw = #{empPw}
+	</select>
+</mapper>
